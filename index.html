@@ -3,38 +3,57 @@
     <head>
         <meta charset="UTF-8">
         <title>Яблоко</title>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 style="color: red; font-size: 100px; font-family: 'Courier New', Courier, monospace;">Главный заголовок</h1>
-        <p style="font-size: 80px;  font-style: italic;">Просто текст, про красное яблоко</p>
-        <div style="font-size: 50px; background-color: bisque;display: flex;justify-content: space-around;">
-            <div style="width: 800px; height: 900px; padding: 40px; border: 10px solid black;">
-                <b style="color: rgb(130, 60, 255); background-color: rgb(255, 251, 0);">Яблоко — это плод яблони, который широко распространён по всему миру. Оно может быть разных сортов, цветов (зелёное, красное, жёлтое) и вкусов (сладкое, кислое, кисло-сладкое).
-                    Яблоки употребляют в свежем виде, а также используют для приготовления соков, компотов, десертов, выпечки и других блюд. Они богаты витаминами, клетчаткой и антиоксидантами,
-                    что делает их полезными для здоровья.</b>
-            </div>
-            <p>
+        <h1>Информационное табло</h1>
+        <p class="italic-large">Мои любимые яблочные рецепты</p>
+        <div class="apple-recipes-container">
+            <div class="apple-recipe">
+                <h2>Яблоки в карамели</h2>
                 <ul>
-                    Яблоки
-                    <li style="background-color: rgb(127, 255, 185);" >Вкусные</li>
-                    <li style="background-color: rgb(127, 255, 210);" >Полезные</li>
-                    <li style="background-color: rgb(127, 255, 215);" >Красивые</li>
-                    <li style="background-color: rgb(127, 255, 230);" >Растут на деревьях бесплатно)0</li>
+                    <li>4 средних яблока (лучше твердых, например, Гренни Смит или Симиренко)</li>
+                    <li>200 г сахара</li>
+                    <li>50 мл воды</li>
+                    <li>1 ст. л. лимонного сока (чтобы карамель не кристаллизовалась)</li>
+                    <li>50 г сливочного масла</li>
+                    <li>Щепотка соли</li>
+                    <li>1 ч. л. ванильного экстракта (или корицы — по желанию)</li>
+                    <li>Деревянные шпажки</li>
                 </ul>
-            </p>
-            <span style="background-color: rgb(255, 204, 127); width: 400px">Ингредиенты для запеченных яблок: <br><br>
-                 Яблоки — 2–4 шт.
-
-                Сахар или мёд — по вкусу (1–2 ч. ложки на яблоко)<br>
-                
-                Корица — по желанию<br>
-                
-                Изюм, орехи или другие добавки — по желанию</span>
+            </div>
+            <div class="apple-recipe">
+                <h2>Классическая шарлотка</h2>
+                <ul>
+                    <li>4–5 яблок (лучше кисло-сладких, например, Антоновка или Гренни Смит)</li>
+                    <li>3 яйца</li>
+                    <li>1 стакан сахара</li>
+                    <li>1 стакан муки</li>
+                    <li>1 ч. л. разрыхлителя</li>
+                    <li>Щепотка корицы (по желанию)</li>
+                </ul>
+            </div>
+            <div class="apple-recipe">
+                <h2>Яблоки, запечённые с мёдом и орехами</h2>
+                <ul>
+                    <li>2 крупных яблока (например, Симиренко или Фуджи)</li>
+                    <li>2 ст. л. мёда</li>
+                    <li>1 горсть грецких орехов (или миндаля)</li>
+                    <li>1 ч. л. корицы</li>
+                    <li>1 ст. л. изюма (по желанию)</li>
+                </ul>
+            </div>
         </div>
-        <img src = "./istockphoto-184276818-612x612.jpg" alt = "Фотокарточка яблока"/>
-        <hr size="10" color="#FF69B4">
+        <div class="img-text-container">
+            <img id="apple-img" src = "./istockphoto-184276818-612x612.jpg" alt = "Фотокарточка яблока"/>
+            <p class="hover-text">Яблоко — это плод яблони, который широко распространён по всему миру. 
+                Оно может быть разных сортов, цветов (зелёное, красное, жёлтое) и вкусов (сладкое, кислое, кисло-сладкое). 
+                Яблоки употребляют в свежем виде, а также используют для приготовления соков, компотов, десертов, выпечки и других блюд.
+                 Они богаты витаминами, клетчаткой и антиоксидантами, что делает их полезными для здоровья.</p>
+        </div>
         <div>
-            <tt style="font-size: 30px;">Ссылка на статью вики (кликнуть ниже) </tt>
+            <tt class="italic-large">Ссылка на статью вики (кликнуть ниже) </tt>
         </div>
         <a href="https://ru.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE"> <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIct2x4PCpiUmEvixEblcjORQ8WHXbD4DEjw&s" width="100" height="100"/></a>
     </body>

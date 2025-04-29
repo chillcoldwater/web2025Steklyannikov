@@ -1,0 +1,71 @@
+h1 {
+    color: red; 
+    font-size: x-large; 
+    font-family: 'Courier New', Courier, monospace;
+}
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(89, 23, 220, 0.517);
+}
+.italic-large {
+    font-size: large;  
+    font-style: italic;
+}
+.apple-recipe {
+    color: rgb(122, 77, 201); 
+    font-size: large
+}
+.apple-recipe:hover {
+    animation: Scale 0.3s ease-in-out forwards;
+    h2 {
+        color: rgb(78, 7, 220);
+    }
+}
+.apple-recipes-container {
+    font-size: 50px; 
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    border: 7px solid black;
+    gap: 20px;
+    padding: 30px;
+    margin: 30px auto;
+}
+#apple-img {
+    width: 110px;
+    height: 110px;
+}
+.hover-text {
+    opacity: 0;
+    animation: fadeOut 0.5s ease;
+}
+.img-text-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.img-text-container:hover .hover-text {
+    animation: fadeIn 0.5s ease forwards;
+}
+ul > li {
+    list-style:square;
+}
+@keyframes fadeIn {
+    from {opacity: 0; transform: translate(0, 20px);}
+    to {opacity: 1;}
+}
+@keyframes fadeOut {
+    from {opacity:1; transform: translate(0, 0);}
+    to {opacity: 0; transform: translate(0, 20px);}
+}
+@keyframes Scale {
+    from {scale: 1.0;}
+    to {scale: 1.1;}
+}
+@media only screen and (max-width: 756px) {
+    .apple-recipes-container {
+        display: flex;
+        margin: 50px;
+        flex-direction: column;
+    }
+}
